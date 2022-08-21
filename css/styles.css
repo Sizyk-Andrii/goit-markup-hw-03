@@ -89,6 +89,8 @@ ul {
 button {
   font-size: var(--secondary-font-size);
   cursor: pointer;
+  border-width: 0;
+  padding: 0;
 }
 
 span {
@@ -189,6 +191,8 @@ address {
   letter-spacing: var(--primary-letter-spacing);
   color: var(--logo-navigation-text-color);
   margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .menu-contacts-navigation {
@@ -236,6 +240,11 @@ address {
 
 .footer-gap {
     margin-bottom: 9px;
+}
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* =========STUDIO========== */
@@ -324,12 +333,16 @@ address {
 }
 
 .examples_work,
-.our-team-list,
-.our-virtues-list {
+.our-team-list, .our-virtues-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* .our-virtues-list {
+    display: flex;
+    column-gap: 30px;
+  } */
 
 .our-team-section {
   background-color: var(--third-bg-color);
@@ -337,9 +350,10 @@ address {
 
 /* ========PORTFOLIO======= */
 
-/* .portfolio-page {
-    padding: 0;
-}  */
+/* .portfolio-button {
+    display: inline-block;
+    padding: 6 22;
+}    */
 
 .portfolio-list-projects {
   display: flex;
