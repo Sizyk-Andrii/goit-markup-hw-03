@@ -196,10 +196,6 @@ address {
   color: var(--paragraf-text-color);
 }
 
-.line-in-header {
-  border: 1px solid var(--line-in-header-color);
-}
-
 .main_title {
   margin-bottom: 30px;
 }
@@ -329,10 +325,6 @@ address {
   justify-content: space-between;
 }
 
-/* .our-virtues-list {
-    display: flex;
-    column-gap: 30px;
-  } */
 
 .our-team-section {
   background-color: var(--third-bg-color);
@@ -340,18 +332,10 @@ address {
 
 /* ========PORTFOLIO======= */
 
-/* .portfolio-button {
-    display: inline-block;
-    padding: 6 22;
-}    */
-
 .portfolio-list-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-
-.portfolio-list-projects-container {
 }
 
 .button-text {
