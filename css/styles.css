@@ -33,7 +33,8 @@
 }
 
 header {
-  background-color: var(--bg-color1);
+  background-color: var(--bg-color1); /* на макеті бачу саме --bg-color1: #ffffff; колір */
+  border-bottom: 1px solid var(--line-in-header-color);
 }
 
 body {
@@ -67,8 +68,8 @@ ul {
 }
 
 .section {
-  box-sizing: border-box;
-  flex: content;
+  /* box-sizing: border-box;
+  flex: content; */
   padding: 94px 0;
 }
 
@@ -128,6 +129,7 @@ address {
   line-height: var(--primary-line-height);
   letter-spacing: var(--secondary-letter-spacing);
   color: var(--main-text-color);
+  
 }
 
 .portfolio-btn-list {
@@ -160,9 +162,10 @@ address {
   display: flex;
   flex: content;
   align-items: center;
-  border-bottom-width: 1px;
+ 
+  /* border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--line-in-header-color);
+  border-bottom-color: var(--line-in-header-color); */
 }
 
 .navigation-page,
@@ -185,8 +188,8 @@ address {
   letter-spacing: var(--primary-letter-spacing);
   color: var(--logo-navigation-text-color);
   margin-right: 93px;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .menu-contacts-navigation {
@@ -229,21 +232,28 @@ address {
   margin-bottom: 9px;
 }
 
-.footer-container {
+/* .footer-container { 
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 
 /* =========STUDIO========== */
 
-.hero-conteiner {
+/* .hero-conteiner {
+  
+} */
+
+.top-main-index-bg
+{
+  background-color: var(--secondary-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.top-main-index-bg,
 .page-footer-bg {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .top-main-index-button {
@@ -293,6 +303,7 @@ address {
   line-height: var(--primary-line-height);
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .our-virtues-desc {
@@ -302,6 +313,10 @@ address {
 
 .our-virtues-conteiner {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.examples-frame {
+  padding-top: 0;
 }
 
 .specialists_name {
@@ -376,12 +391,13 @@ address {
 .text-project-portfolio,
 .kind-project-portfolio {
   margin-right: auto;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .frame-project-portfolio {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  padding: 20px 24px;
 }
 
 .frame-specialists_name {
@@ -396,16 +412,13 @@ address {
 
 .frame {
   background: var(--bg-color1);
-
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--border-color);
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-color);
-
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  
 }
+
+.no-gap {
+  display: block;
+}
+
